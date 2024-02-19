@@ -5,6 +5,7 @@ const nextConfig = {
       "oaidalleapiprodscus.blob.core.windows.net",
       "res.cloudinary.com",
     ],
+    output: "export",
   },
 };
 
