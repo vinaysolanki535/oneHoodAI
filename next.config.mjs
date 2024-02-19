@@ -1,6 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
+  exportPathMap: async function () {
+    return {
+      "/": { page: "/" },
+    };
+  },
   images: {
     domains: [
       "oaidalleapiprodscus.blob.core.windows.net",
